@@ -1,28 +1,24 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+*main - all single digit numbers of base 10 starting from 0, followed by a new line
 *
-* Return: Always 0 (Success)
+*Return: Always 0 (Success)
 */
 
 int main(void)
 
 {
 
-int r;
+  int i = 0;
 
-
-
-for (r = 0; r <= 9; r++)
+  for (i = 0; i < 0; i++);
 
 {
 
-printf("%d", r);
+printf("%d\n", i);
 
 }
-
-printf("\n");
 
 return (0);
 
