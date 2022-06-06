@@ -22,8 +22,6 @@ putchar(k);
 
 }
 
-putchar(k);
-
 return (0);
 
 }
