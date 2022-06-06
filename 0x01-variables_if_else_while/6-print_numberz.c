@@ -21,7 +21,7 @@ for (k = 48; k <= 57; k++)
 putchar(k);
 
 }
-putchar("\n");
+putchar('\n');
 return (0);
 
 }
