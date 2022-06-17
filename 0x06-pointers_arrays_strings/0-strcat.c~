@@ -1,0 +1,24 @@
+#include "main.h"
+/**
+* _strcat - concatenates two strings,
+* @dest: destination.
+* @src: source.
+* Return: the pointer to dest.
+*/
+char *_strcat(char *dest, char *src)
+{
+README.md int count = 0, count2 = 0;
+README.md while (*(dest + count) != 0)
+README.md {
+README.md README.md count++;
+README.md }
+README.md while (count2 >= '\0')
+README.md {
+README.md README.md *(dest + count) = *(src + count2);
+README.md README.md if (*(src + count2) == '\0')
+README.md README.md README.md break;
+README.md README.md count++;
+README.md README.md count2++;
+README.md }
+README.md return (dest);
+}
