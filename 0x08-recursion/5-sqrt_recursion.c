@@ -1,71 +1,29 @@
-#include "holberton.h"
-
-
-
+#include "main.h"
 /**
-
- *_sqrt_recursion -  func that returns the natural square root of a number.
-
- * @n: for number input
-
- * Return: 0
-
- */
-
-
-
-int _sqrt_recursion(int n)
-
+*comparar - function that returns the power of number
+*@n: original number
+*@y: counter to compare multiplication
+*
+*Return: square root
+*/
+int comparar(int n, int y)
 {
-
-if (n == 0)
-
-return (0);
-
-else if (n == 1)
-
-return (1);
-
-else if (n < 0)
-
-return (-1);
-
-else
-
-return (helper(n, 1));
-
+if (y * y == n)
+{
+return (y);
 }
-
-
-
-/**
-
- * helper - blank
-
- * @n: number
-
- * @i: incrementor
-
- * Return: -1;
-
- */
-
-
-
-int helper(int n, int i)
-
+else if (y * y > n)
 {
-
-if (n == (i * i))
-
-return (i);
-
-else if (n > (i * i))
-
-return (helper(n, i + 1));
-
-else
-
 return (-1);
-
+}
+return (comparar(n, y + 1));
+}
+/**
+*_sqrt_recursion - function that returns the power of number
+*@n: number
+*Return: the natural square root
+*/
+int _sqrt_recursion(int n)
+{
+return (comparar(n, 1));
 }
