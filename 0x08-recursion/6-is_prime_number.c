@@ -1,55 +1,31 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
-
- * is_prime_number - func that returns 1 if a num is a prime num, 0 otherwise
-
- * @n: number for input
-
- * Return: 0
-
- */
-
-int is_prime_number(int n)
-
+*comparar - function that returns the power of number
+*@n: original number
+*@y: counter to compare multiplication
+*
+*Return: square root
+*/
+int comparar(int n, int y)
 {
-
-return (helper_prime(n, 2, n / 2));
-
+int count = 0;
+if (y <= n)
+{
+if (n % y == 0)
+count++;
+return (count + comparar(n, y + 1));
 }
-
-
-
+return (count);
+}
 /**
-
- *  helper_prime - blank
-
- * @n: checkl
-
- * @i: for the increment
-
- * @limit: stop
-
- * Return: 0
-
- */
-
-
-
-int helper_prime(int n, int i, int limit)
-
+*is_prime_number - return 1 if is number prime
+*@n: number to evaluate
+*Return: 1 or 0
+*/
+int is_prime_number(int n)
 {
-
-if ((n % i == 0 && i <= limit) || n < 0 || n == 1)
-
-return (0);
-
-else if (n % i != 0 && i <= limit)
-
-return (helper_prime(n, i + 1, limit));
-
-else
-
+if (comparar(n, 1) == 2)
 return (1);
-
+else
+return (0);
 }
