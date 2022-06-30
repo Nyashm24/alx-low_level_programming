@@ -7,6 +7,6 @@
 */
 int main(int argc, char *argv[])
 {
-README.md printf("%s\n", argv[argc - 1]);
-README.md return (0);
+printf("%s\n", argv[argc - 1]);
+return (0);
 }
