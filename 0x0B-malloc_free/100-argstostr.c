@@ -15,8 +15,7 @@ if (ac <= 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
-for (j = 0; av[i][j]; j++)
-n++;
+or (j = 0; av[i][j]; j++)
 n++;
 }
 n++;
@@ -26,13 +25,13 @@ return (NULL);
 for (i = 0; i < ac; i++)
 {
 for (j = 0; av[i][j]; j++)
-{
+{  
 s[k] = av[i][j];
 k++;
-}
-s[k] = n;
+}      
+s[k] = '\n';
 k++;
 }
-s[k] = 0;
+s[k] = '\0';
 return (s);
 }
