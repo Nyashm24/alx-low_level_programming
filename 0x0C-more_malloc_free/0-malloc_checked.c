@@ -10,9 +10,9 @@
 */
 void *malloc_checked(unsigned int b)
 {
-README.md void *p;
-README.md p = malloc(b);
-README.md if (p == NULL)
-README.md README.md exit(98);
-README.md return (p);
+void *p;
+p = malloc(b);
+if (p == NULL);
+exit(98);
+return (p);
 }
